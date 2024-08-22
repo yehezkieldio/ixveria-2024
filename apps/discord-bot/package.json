@@ -5,6 +5,7 @@
     "main": "dist/main.js",
     "type": "module",
     "scripts": {
+        "prebuild": "bun ../../scripts/rimraf.ts .",
         "build": "tsup --format esm",
         "start": "bun --env-file ../../.env .",
         "typecheck": "tsc --noEmit"
