@@ -1,12 +1,13 @@
 import { Listener } from "@sapphire/framework";
 import type { Client, ClientUser } from "discord.js";
+import { ImperiaEvents } from "#lib/extensions/constants/events";
 
 export class ClientReadyListener extends Listener {
     public constructor(context: Listener.LoaderContext, options: Listener.Options) {
         super(context, {
             ...options,
             once: true,
-            event: "ready",
+            event: ImperiaEvents.ClientReady,
         });
     }
 
