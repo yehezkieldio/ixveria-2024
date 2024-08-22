@@ -13,7 +13,6 @@
         "biome": "biome check .",
         "biome:fix": "biome check . --write"
     },
-    "dependencies": {},
     "devDependencies": {
         "@biomejs/biome": "^1.8.3",
         "@ixveria/configuration": "workspace:*",
