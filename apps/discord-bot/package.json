@@ -26,7 +26,8 @@
     "devDependencies": {
         "@ixveria/configuration": "*",
         "@types/bun": "latest",
-        "tsup": "^8.2.4"
+        "tsup": "^8.2.4",
+        "typescript": "^5.5.4"
     },
     "imports": {
         "#lib/*": "./src/lib/*.ts"
