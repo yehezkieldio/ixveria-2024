@@ -2,19 +2,24 @@ services:
   postgresql:
     container_name: ixveria_infrastructure_db
     image: postgres:latest
-    env_file:
-      - path: "../../.env"
+    hostname: localhost
     ports:
     - "5432:5432"
+    env_file: "../../.env"
     environment:
       POSTGRES_USER: ${DOCKER_POSTGRES_USER}
       POSTGRES_PASSWORD: ${DOCKER_POSTGRES_PASSWORD}
       POSTGRES_DB: ${DOCKER_POSTGRES_NAME}
     volumes:
-      - ./data/pg:/var/lib/postgresql/data
+      - ./postgresql:/var/lib/postgresql/data
+    restart: unless-stopped
     networks:
       - ixveria_infrastructure
 
 networks:
   ixveria_infrastructure:
     driver: bridge
+
+volumes:
+  postgresql:
+    driver: local
