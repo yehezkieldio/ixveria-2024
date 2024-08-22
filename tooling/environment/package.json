@@ -2,6 +2,7 @@
     "name": "@ixveria/environment",
     "description": "Entrypoint for accessing all process environment variables.",
     "version": "0.0.0",
+    "main": "env.ts",
     "dependencies": {
         "@t3-oss/env-core": "^0.11.0",
         "zod": "^3.23.8"
@@ -9,5 +10,9 @@
     "devDependencies": {
         "@ixveria/configuration": "workspace:*"
     },
-    "files": ["bot.ts"]
+    "exports": {
+        ".": {
+            "import": "./env.ts"
+        }
+    }
 }

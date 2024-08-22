@@ -9,6 +9,7 @@ process.env = {
 export const env = createEnv({
     server: {
         DISCORD_TOKEN: z.string(),
+        DATABASE_URL: z.string().url(),
     },
 
     /**

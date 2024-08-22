@@ -1,0 +1,25 @@
+{
+    "name": "@ixveria/database",
+    "description": "The database access layer via Drizzle ORM for the project.",
+    "version": "1.0.0",
+    "scripts": {
+        "db:push": "bun --env-file ../../.env drizzle-kit push",
+        "db:studio": "bun --env-file ../../.env drizzle-kit studio",
+        "db:generate": "bun --env-file ../../.env drizzle-kit generate",
+        "db:migrate": "bun --env-file ../../.env drizzle-kit migrate"
+    },
+    "dependencies": {
+        "@ixveria/environment": "workspace:*",
+        "drizzle-orm": "^0.33.0",
+        "postgres": "^3.4.4"
+    },
+    "devDependencies": {
+        "drizzle-kit": "^0.24.0",
+        "@ixveria/configuration": "workspace:*"
+    },
+    "exports": {
+        ".": {
+            "import": "./src/index.ts"
+        }
+    }
+}
