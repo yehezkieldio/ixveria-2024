@@ -1,0 +1,29 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "ui": "tui",
+    "tasks": {
+        "build": {
+            "dependsOn": ["^build"],
+            "inputs": ["$TURBO_DEFAULT$", ".env"],
+            "outputs": ["dist/**"]
+        },
+        "check-types": {
+            "dependsOn": ["^check-types"]
+        },
+        "start": {
+            "persistent": true,
+            "dependsOn": ["^build"],
+            "cache": false
+        },
+        "dev": {
+            "persistent": true,
+            "cache": false
+        },
+        "//#biome": {},
+        "//#biome:fix": {
+            "cache": false
+        }
+    },
+    "globalDependencies": [".env"],
+    "globalPassThroughEnv": ["NODE_ENV"]
+}

@@ -1,0 +1,22 @@
+{
+    "name": "ixveria-monorepo",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "preinstall": "npx only-allow bun",
+        "build": "turbo build",
+        "biome": "biome check .",
+        "biome:fix": "biome check . --write"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@ixveria/configuration": "workspace:*",
+        "@biomejs/biome": "^1.8.3",
+        "@total-typescript/ts-reset": "^0.5.1",
+        "@types/bun": "^1.1.6",
+        "turbo": "^2.0.14",
+        "typescript": "^5.5.4"
+    },
+    "packageManager": "bun@1.1.25",
+    "workspaces": ["apps/*", "tooling/*", "packages/*"]
+}

@@ -1,0 +1,8 @@
+{
+    "extends": "@ixveria/configuration/tsconfig/base.json",
+    "compilerOptions": {
+        "noEmitOnError": true,
+        "baseUrl": "../../"
+    },
+    "include": ["src", "../../reset.d.ts"]
+}

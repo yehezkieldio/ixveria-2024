@@ -1,0 +1,9 @@
+{
+    "extends": "@ixveria/configuration/tsconfig/base.json",
+    "compilerOptions": {
+        "baseUrl": "../../",
+        "lib": ["dom"]
+    },
+    "files": ["bot.ts"],
+    "exclude": ["node_modules", "../../node_modules/*"]
+}
