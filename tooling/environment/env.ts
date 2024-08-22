@@ -8,6 +8,7 @@ process.env = {
 
 export const env = createEnv({
     server: {
+        NODE_ENV: z.enum(["development", "production"]).default("development"),
         DISCORD_TOKEN: z.string(),
         DATABASE_URL: z.string().url(),
     },

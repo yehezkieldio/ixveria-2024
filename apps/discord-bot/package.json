@@ -3,9 +3,10 @@
     "description": "All-in-one Discord bot solution for various tasks.",
     "version": "0.0.0",
     "main": "dist/main.js",
+    "type": "module",
     "scripts": {
-        "build": "tsup --format cjs",
-        "start": "bun --env-file ../../.env dist/main.js",
+        "build": "tsup --format esm",
+        "start": "bun --env-file ../../.env .",
         "check-types": "tsc --noEmit"
     },
     "dependencies": {
@@ -28,6 +29,6 @@
         "tsup": "^8.2.4"
     },
     "imports": {
-        "#lib*": "./src/lib*"
+        "#lib/*": "./src/lib/*.ts"
     }
 }

@@ -5,6 +5,7 @@
     "scripts": {
         "preinstall": "npx only-allow bun",
         "build": "turbo build",
+        "start:bot": "turbo start --filter @ixveria/discord-bot",
         "db:push": "turbo db:push",
         "db:studio": "turbo db:studio",
         "db:generate": "turbo db:generate",

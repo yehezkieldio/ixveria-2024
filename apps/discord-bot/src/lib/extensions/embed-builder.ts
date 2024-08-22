@@ -1,5 +1,5 @@
 import { EmbedBuilder } from "discord.js";
-import { Colors } from "#lib/colors.js";
+import { Colors } from "#lib/colors";
 
 export class ImperiaEmbedBuilder extends EmbedBuilder {
     public constructor() {
