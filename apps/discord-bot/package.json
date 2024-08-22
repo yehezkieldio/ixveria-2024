@@ -1,5 +1,6 @@
 {
     "name": "@ixveria/discord-bot",
+    "description": "All-in-one Discord bot solution for various tasks.",
     "version": "0.0.0",
     "main": "dist/main.js",
     "scripts": {
