@@ -3,5 +3,5 @@
     "compilerOptions": {
         "noEmitOnError": true
     },
-    "include": ["src", "../../reset.d.ts"]
+    "include": ["**/*.ts", "../../reset.d.ts"]
 }
