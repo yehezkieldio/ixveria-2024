@@ -10,8 +10,8 @@
         "typecheck": "tsc --noEmit"
     },
     "dependencies": {
-        "@ixveria/environment": "*",
-        "@ixveria/database": "*",
+        "@ixveria/environment": "workspace:*",
+        "@ixveria/database": "workspace:*",
         "@sapphire/discord.js-utilities": "^7.3.0",
         "@sapphire/fetch": "^3.0.2",
         "@sapphire/framework": "^5.2.1",
@@ -24,7 +24,7 @@
         "discord.js": "^14.15.3"
     },
     "devDependencies": {
-        "@ixveria/configuration": "*",
+        "@ixveria/configuration": "workspace:*",
         "@types/bun": "latest",
         "tsup": "^8.2.4",
         "typescript": "^5.5.4"

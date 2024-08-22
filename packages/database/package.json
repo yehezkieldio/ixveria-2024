@@ -10,13 +10,13 @@
         "typecheck": "tsc --noEmit"
     },
     "dependencies": {
-        "@ixveria/environment": "*",
+        "@ixveria/environment": "workspace:*",
         "drizzle-orm": "^0.33.0",
         "postgres": "^3.4.4"
     },
     "devDependencies": {
         "drizzle-kit": "^0.24.0",
-        "@ixveria/configuration": "*"
+        "@ixveria/configuration": "workspace:*"
     },
     "exports": {
         ".": {
