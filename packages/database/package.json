@@ -9,13 +9,13 @@
         "db:migrate": "bun --env-file ../../.env drizzle-kit migrate"
     },
     "dependencies": {
-        "@ixveria/environment": "workspace:*",
+        "@ixveria/environment": "*",
         "drizzle-orm": "^0.33.0",
         "postgres": "^3.4.4"
     },
     "devDependencies": {
         "drizzle-kit": "^0.24.0",
-        "@ixveria/configuration": "workspace:*"
+        "@ixveria/configuration": "*"
     },
     "exports": {
         ".": {

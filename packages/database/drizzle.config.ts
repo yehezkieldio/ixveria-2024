@@ -1,5 +1,4 @@
-import { env } from "tooling/environment/env";
-
+import { env } from "@ixveria/environment";
 import type { Config } from "drizzle-kit";
 
 export default {

@@ -1,7 +1,5 @@
 {
     "extends": "@ixveria/configuration/tsconfig/base.json",
-    "compilerOptions": {
-        "baseUrl": "../../"
-    },
+    "compilerOptions": {},
     "exclude": ["node_modules", "../../node_modules/*"]
 }
