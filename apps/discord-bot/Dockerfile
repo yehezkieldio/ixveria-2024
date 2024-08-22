@@ -55,7 +55,7 @@ COPY --from=builder /tmp/node_modules ./node_modules
 COPY --from=builder /app/out/full/ .
 
 # Run the build using Turbo
-RUN yarn turbo run build
+RUN yarn turbo run build --filter @ixveria/discord-bot
 
 # ---------------------------------------------------------------------------- #
 
