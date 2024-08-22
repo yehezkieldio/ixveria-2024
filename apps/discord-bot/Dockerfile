@@ -22,6 +22,11 @@ RUN yarn global add turbo@^2
 # Copy all files to the working directory
 COPY . .
 
+# This is a workaround for a functional prune on a Bun workspace
+# Since Turborepo doesn't support Bun for pruning (yet?), we need to convert the workspace to Yarn
+# and install the dependencies with Bun to generate the Yarn lockfile, so Turbo can use it for pruning
+# This is a temporary solution until Turborepo supports Bun for pruning (if ever)
+
 # Convert Bun workspace to Yarn (skip installing for now)
 RUN bunx @turbo/workspaces@latest convert ./ yarn --skip-install
 
