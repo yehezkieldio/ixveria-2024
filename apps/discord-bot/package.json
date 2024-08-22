@@ -11,12 +11,23 @@
     "dependencies": {
         "@ixveria/environment": "*",
         "@ixveria/database": "*",
+        "@sapphire/discord.js-utilities": "^7.3.0",
+        "@sapphire/fetch": "^3.0.2",
         "@sapphire/framework": "^5.2.1",
+        "@sapphire/pieces": "^4.3.1",
+        "@sapphire/plugin-logger": "^4.0.2",
+        "@sapphire/plugin-scheduled-tasks": "^10.0.1",
+        "@sapphire/plugin-subcommands": "^7.0.0",
+        "@sapphire/time-utilities": "^1.7.12",
+        "@sapphire/utilities": "^3.17.0",
         "discord.js": "^14.15.3"
     },
     "devDependencies": {
         "@ixveria/configuration": "*",
         "@types/bun": "latest",
         "tsup": "^8.2.4"
+    },
+    "imports": {
+        "#lib*": "./src/lib*"
     }
 }
