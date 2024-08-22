@@ -7,7 +7,7 @@
     "scripts": {
         "build": "tsup --format esm",
         "start": "bun --env-file ../../.env .",
-        "check-types": "tsc --noEmit"
+        "typecheck": "tsc --noEmit"
     },
     "dependencies": {
         "@ixveria/environment": "*",

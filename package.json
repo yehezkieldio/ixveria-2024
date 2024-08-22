@@ -10,16 +10,20 @@
         "db:studio": "turbo db:studio",
         "db:generate": "turbo db:generate",
         "db:migrate": "turbo db:migrate",
+        "typecheck": "turbo typecheck --parallel",
         "biome": "biome check .",
         "biome:fix": "biome check . --write"
     },
     "dependencies": {},
     "devDependencies": {
-        "@ixveria/configuration": "*",
         "@biomejs/biome": "^1.8.3",
+        "@ixveria/configuration": "*",
         "@total-typescript/ts-reset": "^0.5.1",
         "@types/bun": "^1.1.6",
-        "turbo": "^2.0.14",
+        "lefthook": "^1.7.14",
+        "turbo": "^2.0.14"
+    },
+    "peerDependencies": {
         "typescript": "^5.5.4"
     },
     "packageManager": "bun@1.1.25",

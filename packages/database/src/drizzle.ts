@@ -1,6 +1,6 @@
+import { env } from "@ixveria/environment";
 import { type PostgresJsDatabase, drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-import { env } from "tooling/environment/env";
 
 import * as schema from "./schema";
 
