@@ -12,6 +12,7 @@
     "dependencies": {
         "@ixveria/environment": "workspace:*",
         "@ixveria/database": "workspace:*",
+        "@ixveria/stores": "workspace:*",
         "@sapphire/discord.js-utilities": "^7.3.0",
         "@sapphire/fetch": "^3.0.2",
         "@sapphire/framework": "^5.2.1",

@@ -1,0 +1,23 @@
+{
+    "name": "@ixveria/stores",
+    "description": "Custom Sapphire stores for the project.",
+    "version": "1.0.0",
+    "main": "./src/index.ts",
+    "scripts": {},
+    "dependencies": {
+        "@ixveria/environment": "workspace:*",
+        "@sapphire/framework": "^5.2.1",
+        "@sapphire/pieces": "^4.3.1"
+    },
+    "devDependencies": {
+        "@ixveria/configuration": "workspace:*"
+    },
+    "exports": {
+        ".": {
+            "import": "./src/index.ts"
+        },
+        "./register": {
+            "import": "./src/register.ts"
+        }
+    }
+}

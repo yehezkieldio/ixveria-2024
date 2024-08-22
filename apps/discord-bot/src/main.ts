@@ -5,6 +5,7 @@ import { ImperiaClient } from "#lib/extensions/client";
 
 // Load plugin(s) and register them.
 import "@sapphire/plugin-logger/register";
+import "@ixveria/stores/register";
 
 /**
  * The main entrypoint for the bot.
