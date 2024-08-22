@@ -3,7 +3,9 @@
     "description": "Custom Sapphire stores for the project.",
     "version": "1.0.0",
     "main": "./src/index.ts",
-    "scripts": {},
+    "scripts": {
+        "typecheck": "tsc --noEmit"
+    },
     "dependencies": {
         "@ixveria/environment": "workspace:*",
         "@sapphire/framework": "^5.2.1",
